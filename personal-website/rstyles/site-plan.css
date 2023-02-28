@@ -173,3 +173,31 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+.img-home2 {
+  width: 500px;
+  height: 300px;
+}
+
+.img-home1 {
+  margin-bottom: 1rem;
+  width: 500px;
+  height: 500px;
+} 
+
+.img-work2 {
+  margin-top: 1rem;
+  height: 698px;
+  width: 932px;
+}
+
+.img-hire1 { 
+  height: 698px;
+  width: 932px;
+}
+
+.img-hire2 {
+  margin-top: 1rem;
+  height: 698px;
+  width: 932px;
+}
