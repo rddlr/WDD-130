@@ -2,28 +2,29 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #396E94   ;
-  --secondary-color: #E7C24F ;
-  --accent1-color: #A42212;
-  --accent2-color: white;
+  --primary-color: #24478F   ;
+  --secondary-color: #46D2EB ;
+  --accent1-color: #81A4CD;
+  --accent2-color: #CCF7FF;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: "Playfair Display", serif;
+  --paragraph-font: Montserrat, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+  --headline-color-on-white: #24478F;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+  --paragraph-color-on-white: #24478F; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
+  --paragraph-background-color: #24478F  ;
+  --nav-link-color: white;
+  --nav-background-color: #24478F;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --nav-hover-background-color: #81A4CD;
 }
 
 
@@ -36,9 +37,12 @@ body {
   font-size: 18px;
   text-align: center;
 }
-img {
+.logo-img {
   display: block;
-  margin: 0 auto;
+  margin-top: -100px;
+  margin-bottom: -100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
@@ -46,6 +50,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 h2 {
   text-align: center;
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
 }
 hr {
   height: 3px;
@@ -58,8 +66,16 @@ header {
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
 }
-header > h1, header > h2 {
+header > h1 {
   color: var(--headline-color-on-color);
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+header > h2 {
+  color: var(--headline-color-on-color);
+  font-weight: 400;
+  font-size: 1.8rem;
 }
 
 p {
@@ -201,3 +217,14 @@ nav a:hover {
   height: 698px;
   width: 932px;
 }
+
+.home-page-wireframe {
+  width: 1000px;
+  height: 500px;
+}
+
+.work-page-wireframe {
+  width: 600px;
+  height: 800px;
+}
+
