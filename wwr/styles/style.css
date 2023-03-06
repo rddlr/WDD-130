@@ -432,3 +432,99 @@ main section img {
     font-family: Libre Baskerville;
     font-size: 2rem;
 }
+
+/* CONTACT US PAGE */
+
+.contactus-main {
+    margin-bottom: -195px;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .40fr 1fr .35fr;
+}
+
+#bg-img {
+    grid-column: 1/12;
+    grid-row: 1/4;
+    z-index: -1;
+}
+
+form {
+    /* Center the form on the page */
+    background-color: rgba(255, 255, 255, 0.8);
+    grid-column: 2/6;
+    grid-row: 2/3;
+    z-index: 1;
+    /* Form outline */
+    padding: 1.5em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  form li p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 3px;
+  }
+  
+  form li + li {
+    margin-top: .7em;
+  }
+  
+  form ul label {
+    /* Uniform size & alignment */
+    display: block;
+    font-size: .8em;
+  }
+
+  label span {
+    color: red;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: .7em sans-serif;
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 7em;
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    font-size: .7em;
+    border-width: 0;
+    border-radius: 0;
+    background-color: #26176b;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
