@@ -326,3 +326,7 @@ footer {
     width: 3rem;
 }
 
+.sm-logo:hover {
+    opacity: 0.8;
+}
+
