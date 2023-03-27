@@ -84,7 +84,7 @@ nav a:hover {
     background-color: var(--main-color);
 }
 
-/* MAIN */
+/* MAIN INDEX PAGE*/
 
     /* Hero Section */
     #hero {
@@ -265,6 +265,68 @@ nav a:hover {
         font-weight: 500;
         font-size: 1.5rem;
         color: var(--main-color);
+    }
+
+/* MAIN CONTACT ME PAGE */
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        font-family: var(--paragraph-font);
+        margin-top: 7rem;
+        margin-bottom: 10rem;
+    }
+
+    .contact-img-container img{
+        width: 45rem;
+        height: 45rem;
+        object-fit: cover;
+    }
+    
+    .contact-img-container {
+        margin: auto auto;
+    }
+
+    .contact-text-container {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        margin-left: 1rem;
+    }
+
+    .contact-text-container, .contact-text-container p{
+        width: 50rem;
+        font-size: 1.1rem;
+    }
+
+    .contact-text-container h1 {
+        font-family: var(--main-font);
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        margin-top: -8rem;
+    }
+
+    .contact-container a {
+        text-decoration: none;
+        font-weight: 600;
+        background-color: var(--main-color);
+        border: solid 5px var(--main-color);
+        color: white;
+
+        grid-column: 2/3;
+        margin-top: -10rem;
+        margin-bottom: auto;
+        margin-right: auto;
+        margin-left: 1rem;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .contact-container a:hover {
+        color: var(--main-color);
+        background-color: white;
+        border: solid 5px var(--main-color);
+        transition: 0.15s;
     }
 
 /* FOOTER */
