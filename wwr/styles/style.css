@@ -194,9 +194,18 @@ h4 {
     padding-top: 10px;
 }
 
-.rivers-card, .camping-card, .rapids-card {
+.rivers-card, 
+.camping-card, 
+.rapids-card {
     margin-bottom: 200px;
     margin-top: 150px
+} 
+
+.rivers-card a, 
+.camping-card a, 
+.rapids-card a {
+    text-decoration: none;
+    color: #26176b;
 } 
 
 .rivers-card {

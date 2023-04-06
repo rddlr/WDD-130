@@ -97,13 +97,19 @@ nav a:hover {
     }
 
     #hero-msg {
-        margin-left: auto;
-        padding-right: 10rem;
-        padding-left: 0;
+        margin: 0 auto;
+        overflow: hidden;
     }
 
     #hero-img {
-        width: 38.5rem;
+        width: 616px;
+        height: 770px;
+    }
+
+    #hero-img:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+        opacity: 0.8;
     }
 
     #hero-box {
@@ -179,12 +185,20 @@ nav a:hover {
         cursor: pointer;
         box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
         transition: .15s;
+        overflow: hidden; 
     }
 
     .sample-works div img {
-        width: 100%;
+        width: 553.328px;
+        height: 368.922px;
         border-top-left-radius: 7px;
         border-top-right-radius: 7px;
+    }
+
+    .sample-works div img:hover {
+        transform: scale(1.2);
+        transition: 0.3s;
+        opacity: 0.8;
     }
 
     .sample-works div p {
@@ -329,6 +343,74 @@ nav a:hover {
         transition: 0.15s;
     }
 
+/* MAIN WORKS PAGE */
+
+    .works-container {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
+    }
+
+    .works-container h1 {
+        font-family: var(--main-font);
+        font-size: 3.5rem;
+        color: var(--main-color);
+        margin: auto auto;
+
+        grid-column: 2 / 4;
+    }
+
+    .work-container1,
+    .work-container2 {
+        grid-column: 2 / 4;
+        margin: 4rem;
+        padding: 0.9rem;
+
+        border: solid 2px var(--main-color);
+    }
+
+    .work-container1:hover,
+    .work-container2:hover {
+        grid-column: 2 / 4;
+        margin: 4rem;
+        padding: 0.55rem;
+
+        border: solid 8px var(--main-color);
+        transition: .1s;
+    }
+
+    .work-img-container1,
+    .work-img-container2 {
+        width: 1296.920px;
+        overflow: hidden;
+    }
+
+    .work-img-container1 img,
+    .work-img-container2 img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .work-img-container1 img:hover,
+    .work-img-container2 img:hover{
+        transform: scale(1.1);
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .work-container1 h2,
+    .work-container2 h2{
+        text-align: center;
+        color: var(--main-color);
+        font-family: var(--main-font);
+        font-size: 3rem;
+    }
+
+    .work-container1 p,
+    .work-container2 p{
+        text-align: center;
+        font-family: var(--paragraph-font);
+    }
+    
 /* FOOTER */
 
 footer {
